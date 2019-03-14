@@ -1,0 +1,110 @@
+:root{
+    --mainWhite: #f8f6f6;
+    --blue: #007bff;
+    --deepblue: #10009e;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --darkred: #7e020f;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --dark: #343a40;
+}
+
+.first-header{
+    background: var(--mainWhite);
+    color: var(--dark);
+    font-size: .9rem;
+}
+
+/* navbar */
+#navbar{
+    background: var(--white);
+}
+.nav-link{
+    color: var(--darkred);
+}
+.nav-link:hover{
+    color: var(--mainWhite);
+    background: var(--darkred);
+    transition: all .4s ease-in-out;
+}
+.nav-link.btn{
+    color: var(--white) !important;
+    background: var(--deepblue) !important;
+    font-weight: 500;
+}
+.mr-auto{
+    margin-right: auto !important;
+}
+
+/* home */
+.main-home{
+    background: url(../assets/main-image.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    min-height: calc(90vh - 60px);
+    position: relative;
+}
+.main-home:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(23, 1, 83, 0.5);
+  }
+.main-content{
+    text-align: center;
+    /* background: rgba(255, 255, 255, 0.781); */
+    color: var(--white) !important;
+}
+  h1{
+      font-size: 2.5rem;
+      font-weight: 600;
+  }
+  h1 span{
+      font-size: 1.5rem;
+      font-weight: 400;
+  }
+  .cta-btn{
+      font-weight: 300;
+      margin-top: 20px;
+      padding: 10px;
+      cursor: pointer;
+      color: var(--white);
+      background: var(--deepblue);
+      border-radius: 20px;
+      min-width: 10vw;
+      outline: none !important;
+      border: none;
+      transition: all .5s ease-in-out;
+  }
+  .cta-btn:hover{
+    background: #0c0177;
+  }
+
+
+  /* why you should hire us */
+  #why-hire{
+      background: var(--mainWhite);
+  }
+  .section-title h2{
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--deepblue);
+  }
+  .sub-section-title h2{
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--deepblue);
+  }
